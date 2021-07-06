@@ -144,6 +144,7 @@
     \declaretheorem[style=thmdefinitionbox,name=Definition,sibling=theorem]{definition}
     \declaretheorem[style=thmdefinitionbox,name=Axiom,sibling=theorem]{axiom}
     \declaretheorem[style=thmtheorembox,name=Axiom,sibling=theorem]{axiomthm}
+    \declaretheorem[style=thmdefinitionbox,name=Law,sibling=theorem]{law}
     \declaretheorem[style=thmtheorembox,name=Theorem,numbered=no]{theorem*}
     \declaretheorem[style=thmtheorembox,name=Lemma,numbered=no]{lemma*}
     \declaretheorem[style=thmtheorembox,name=Claim,numbered=no]{claim*}
@@ -185,6 +186,8 @@
 \AtBeginEnvironment{proof}{\vspace{-0.5\baselineskip}}
 \fi
 
+\newtheorem*{problem*}{Problem}
+
 \theoremstyle{definition}
 
 \newtheorem{conjecture}[theorem]{Conjecture}
@@ -199,7 +202,6 @@
 \newtheorem*{joke*}{Joke}
 \newtheorem*{question*}{Question}
 \newtheorem*{exercise*}{Exercise}
-\newtheorem*{problem*}{Problem}
 \newtheorem*{notation}{Notation}
 \newtheorem*{remark}{Remark}
 
@@ -299,5 +301,6 @@
 % Vectors and Matrices Stuff
 \newcommand{\vv}[1]{\mathbf{#1}}
 \newcommand{\vecspan}{\operatorname{span}}
+\newcommand{\tr}{\operatorname{tr}}
 
-\newcommand{\dd}{\; d}
+\newcommand{\dd}{\; \mathrm{d}}
