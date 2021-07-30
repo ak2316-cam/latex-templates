@@ -154,9 +154,13 @@
 \ifescolor
 \declaretheorem[style=exbox, name=Question]{question}
 \declaretheorem[style=exbox, name=Problem]{problem}
+\declaretheorem[style=exbox, name=Question, numbered=no]{question*}
+\declaretheorem[style=exbox, name=Problem, numbered=no]{problem*}
 \else
 \declaretheorem[style=thmbox, name=Question]{question}
 \declaretheorem[style=thmbox, name=Problem]{problem}
+\declaretheorem[style=thmbox, name=Question, numbered=no]{question*}
+\declaretheorem[style=thmbox, name=Problem, numbered=no]{problem*}
 \fi
 
 
@@ -170,9 +174,7 @@
 \newtheorem*{example*}{Example}
 \newtheorem*{fact*}{Fact}
 \newtheorem*{note*}{Note}
-\newtheorem*{problem*}{Problem}
 \newtheorem*{remark*}{Remark}
-\newtheorem*{question*}{Question}
 \newtheorem*{lemma}{Lemma}
 
 \newcommand{\dd}{\;\mathrm{d}}
