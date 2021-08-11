@@ -10,6 +10,7 @@
 \newif\ifadamfancyproofs\adamfancyproofsfalse
 \newif\ifadamnoindent\adamnoindentfalse
 \newif\ifadamfancytheorems\adamfancytheoremsfalse
+\newif\ifadamkoma\adamkomatrue
 \DeclareOption{fancyproofs}{\adamfancyproofstrue}
 \DeclareOption{fancytheorems}{\adamfancytheoremstrue}
 \DeclareOption{noindent}{\adamnoindenttrue}
@@ -258,6 +259,7 @@
 \KOMAoptions{numbers=noenddot}
 \fi
 
+
 \newenvironment{aside}[1]{
     \rule{\textwidth}{0.025cm}
     \vspace{-1.75\baselineskip}
@@ -292,7 +294,6 @@
 \newcommand{\image}{\operatorname{img}} % Image
 \newcommand{\kernel}{\operatorname{ker}} % Kernel
 \newcommand{\img}{\operatorname{img}}
-\newcommand{\ker}{\operatorname{img}}
 \newcommand{\sym}{\operatorname{Sym}} % Symmetric Set
 \newcommand{\sign}{\operatorname{sign}}
 \newcommand{\ord}{\operatorname{ord}}
