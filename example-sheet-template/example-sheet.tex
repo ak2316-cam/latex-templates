@@ -2,7 +2,7 @@
 
 \usepackage[
   noindent,
-  %color % Enable/disable this option to get tinted problem boxes.
+  % color % Enable/disable this option to get tinted problem boxes.
 ]{examplesheet}
 
 \title{Sample Course -- Example Sheet 1}
@@ -21,8 +21,12 @@
 \begin{problem}
   Find all continuous functions $f: \R \rightarrow \R$ such that $f(x) + f(2x) = 0$.
 \end{problem}
-\begin{proof}[Solution]
-  With $x = 0$ we immediately have that $f(0) = 0$. Then rearranging the condition, we have $
+
+\begin{claim}
+The only such function is $f(x) = 0$.
+\end{claim}
+\begin{proof}
+With $x = 0$ we immediately have that $f(0) = 0$. Then rearranging the condition, we have $
 f(x) = - f(x/2)$,
 which can then be repeatedly applied to obtain
   $$

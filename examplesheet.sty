@@ -36,6 +36,9 @@
 \usepackage{cancel}
 \usepackage{bbm}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning}
 
 % Header
 \usepackage{fancyhdr}
@@ -159,6 +162,26 @@
   postheadspace = {0pt}
 ]{thmbox}
 
+\mdfdefinestyle{mdgreenbox}{%
+  skipabove=8pt,
+  linewidth=2pt,
+  rightline=false,
+  leftline=true,
+  topline=false,
+  bottomline=false,
+  linecolor=ForestGreen,
+  backgroundcolor=ForestGreen!5,
+}
+\declaretheoremstyle[
+  headfont=\bfseries\sffamily\color{ForestGreen!70!black},
+  bodyfont=\normalfont,
+  spaceabove=2pt,
+  spacebelow=1pt,
+  mdframed={style=mdgreenbox},
+  headpunct={ --- },
+]{thmgreenbox}
+
+
 \ifescolor
 \declaretheorem[style=exbox, name=Question]{question}
 \declaretheorem[style=exbox, name=Problem]{problem}
@@ -169,14 +192,16 @@
 \declaretheorem[style=thmbox, name=Problem]{problem}
 \declaretheorem[style=thmbox, name=Question, numbered=no]{question*}
 \declaretheorem[style=thmbox, name=Problem, numbered=no]{problem*}
+% \newtheorem*{claim}{Claim}
 \fi
+
+\declaretheorem[style=thmgreenbox, name=Claim, numbered=no]{claim}
 
 
 
 
 \newtheorem*{answer*}{Answer}
 \newtheorem*{case*}{Case}
-\newtheorem*{claim}{Claim}
 \newtheorem*{conjecture*}{Conjecture}
 \newtheorem*{exercise*}{Exercise}
 \newtheorem*{example*}{Example}
